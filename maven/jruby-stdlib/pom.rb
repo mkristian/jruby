@@ -6,7 +6,7 @@ project 'JRuby Stdlib' do
 
   model_version '4.0.0'
   id "org.jruby:jruby-stdlib:#{version}"
-  inherit "org.jruby:jruby-artifacts:#{version}"
+  inherit "org.jruby:jruby-artifacts:#{version}", :relative_path => '../pom.rb'
   packaging 'jar'
 
   properties( 'tesla.not.dump.pom' => 'pom.xml',

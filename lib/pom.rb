@@ -54,7 +54,7 @@ project 'JRuby Lib Setup' do
 
   model_version '4.0.0'
   id 'jruby-lib'
-  inherit "org.jruby:jruby-parent", version
+  inherit "org.jruby:jruby-parent", version, :relative_path => '../pom.rb' 
   packaging 'pom'
 
   properties( 'tesla.not.dump.pom' => 'pom.xml',

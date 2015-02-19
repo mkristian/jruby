@@ -4,7 +4,7 @@ project 'JRuby Main Maven Artifact With ASM Relocated' do
 
   model_version '4.0.0'
   id "org.jruby:jruby-noasm:#{version}"
-  inherit "org.jruby:jruby-artifacts:#{version}"
+  inherit "org.jruby:jruby-artifacts:#{version}", :relative_path => '../pom.rb'
 
   # keep it a jar even without sources - easier to add to a project
   packaging 'jar'

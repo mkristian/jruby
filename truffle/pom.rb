@@ -2,7 +2,7 @@ version = File.read( File.join( basedir, '..', 'VERSION' ) ).strip
 project 'JRuby Truffle' do
 
   model_version '4.0.0'
-  inherit 'org.jruby:jruby-parent', version
+  inherit 'org.jruby:jruby-parent', version, :relative_path => '../pom.rb'
   id 'org.jruby:jruby-truffle'
 
   properties( 'tesla.not.dump.pom' => 'pom.xml',
