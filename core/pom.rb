@@ -5,8 +5,8 @@ project 'JRuby Core' do
   inherit 'org.jruby:jruby-parent', version
   id 'org.jruby:jruby-core'
 
-  properties( 'tesla.dump.pom' => 'pom.xml',
-              'tesla.dump.readonly' => true,
+  properties( 'tesla.not.dump.pom' => 'pom.xml',
+              'tesla.not.dump.readonly' => true,
 
               'tzdata.version' => '2013d',
               'tzdata.scope' => 'provided',

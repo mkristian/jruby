@@ -23,7 +23,7 @@ execute 'jrubydir', 'initialize' do |ctx|
 end
 
 # ruby-maven will dump an equivalent pom.xml
-properties( 'tesla.dump.pom' => 'pom.xml',
+properties( 'tesla.not.dump.pom' => 'pom.xml',
             'jruby.home' => '../../../../../' )
 
 plugin( 'org.wildfly.plugins:wildfly-maven-plugin:1.0.2.Final' ) do

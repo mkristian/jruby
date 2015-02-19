@@ -22,7 +22,7 @@ execute 'jrubydir', 'initialize' do |ctx|
 end
 
 # ruby-maven will dump an equivalent pom.xml
-properties( 'tesla.dump.pom' => 'pom.xml',
+properties( 'tesla.not.dump.pom' => 'pom.xml',
             'jruby.home' => '../../../../../' )
 
 # start jetty for the tests

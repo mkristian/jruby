@@ -11,7 +11,7 @@ jar 'org.osgi:org.osgi.core', '5.0.0', :scope => :provided
 jruby_plugin! :gem, :includeRubygemsInResources => true
 
 # ruby-maven will dump an equivalent pom.xml
-properties( 'tesla.dump.pom' => 'pom.xml',
+properties( 'tesla.not.dump.pom' => 'pom.xml',
             'jruby.home' => '${project.basedir}/../../../../../../' )
 
 execute 'jrubydir', 'process-resources' do |ctx|

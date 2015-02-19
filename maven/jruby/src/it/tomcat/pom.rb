@@ -20,7 +20,7 @@ jruby_plugin :gem, :includeRubygemsInTestResources => false, :includeRubygemsInR
 end 
 
 # ruby-maven will dump an equivalent pom.xml
-properties[ 'tesla.dump.pom' ] = 'pom.xml'
+properties[ 'tesla.not.dump.pom' ] = 'pom.xml'
 
 # start tomcat for the tests
 plugin( 'org.codehaus.mojo:tomcat-maven-plugin', '1.1',

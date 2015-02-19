@@ -2,7 +2,7 @@ gemfile
 
 packaging 'bundle'
 
-properties( 'tesla.dump.pom' => 'pom.xml',
+properties( 'tesla.not.dump.pom' => 'pom.xml',
             'exam.version' => '3.0.3',
             'url.version' => '1.5.2',
             'logback.version' => '1.0.13',
@@ -13,7 +13,7 @@ pom 'org.jruby:jruby', '${jruby.version}'
 jruby_plugin! :gem, :includeRubygemsInResources => true
 
 # ruby-maven will dump an equivalent pom.xml
-properties( 'tesla.dump.pom' => 'pom.xml',
+properties( 'tesla.not.dump.pom' => 'pom.xml',
             'jruby.home' => '../../../../../' )
 
 execute 'jrubydir', 'process-resources' do |ctx|

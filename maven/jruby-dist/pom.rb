@@ -7,8 +7,8 @@ project 'JRuby Dist' do
   inherit "org.jruby:jruby-artifacts:#{version}"
   packaging 'pom'
 
-  properties( 'tesla.dump.pom' => 'pom.xml',
-              'tesla.dump.readonly' => true,
+  properties( 'tesla.not.dump.pom' => 'pom.xml',
+              'tesla.not.dump.readonly' => true,
               'main.basedir' => '${project.parent.parent.basedir}' )
 
   unless version =~ /-SNAPSHOT/

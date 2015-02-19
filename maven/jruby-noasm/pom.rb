@@ -9,8 +9,8 @@ project 'JRuby Main Maven Artifact With ASM Relocated' do
   # keep it a jar even without sources - easier to add to a project
   packaging 'jar'
 
-  properties( 'tesla.dump.pom' => 'pom.xml',
-              'tesla.dump.readonly' => true,
+  properties( 'tesla.not.dump.pom' => 'pom.xml',
+              'tesla.not.dump.readonly' => true,
               'main.basedir' => '${project.parent.parent.basedir}' )
 
   unless version =~ /-SNAPSHOT/

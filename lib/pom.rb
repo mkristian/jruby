@@ -57,8 +57,8 @@ project 'JRuby Lib Setup' do
   inherit "org.jruby:jruby-parent", version
   packaging 'pom'
 
-  properties( 'tesla.dump.pom' => 'pom.xml',
-              'tesla.dump.readonly' => true,
+  properties( 'tesla.not.dump.pom' => 'pom.xml',
+              'tesla.not.dump.readonly' => true,
               'tesla.version' => '0.1.1',
               'jruby.plugins.version' => '1.0.5' )
 

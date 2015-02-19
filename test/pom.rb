@@ -22,8 +22,8 @@ project 'JRuby Integration Tests' do
   plugin_repository( 'http://rubygems-proxy.torquebox.org/releases',
                      :id => 'rubygems-releases' )
 
-  properties( 'tesla.dump.pom' => 'pom.xml',
-              'tesla.dump.readonly' => true,
+  properties( 'tesla.not.dump.pom' => 'pom.xml',
+              'tesla.not.dump.readonly' => true,
               'jruby.home' => '${basedir}/..',
               'gem.home' => '${jruby.home}/lib/ruby/gems/shared' )
 

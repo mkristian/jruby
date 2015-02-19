@@ -11,5 +11,5 @@ execute 'jrubydir', 'initialize' do |ctx|
   JRuby::Commands.generate_dir_info( ctx.project.build.directory.to_pathname + '/rubygems' )
 end
 
-properties( 'tesla.dump.pom' => 'pom.xml',
+properties( 'tesla.not.dump.pom' => 'pom.xml',
             'jruby.home' => '../../../../../' )

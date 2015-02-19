@@ -1,10 +1,9 @@
 #-*- mode: ruby -*-
 
-properties( 'tesla.dump.pom' => 'pom.xml',
-            'tesla.dump.readOnly' => true,
-            'jruby.version' => '@project.version@',
+properties( 'tesla.not.dump.pom' => 'pom.xml',
+            'tesla.not.dump.readOnly' => true,
+            'jruby.version' => '@project.version@'
             'jruby.plugins.version' => '1.0.8' )
-
 gemfile
 
 gem 'bundler', '1.7.7'

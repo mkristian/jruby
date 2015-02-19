@@ -7,8 +7,8 @@ project 'JRuby Artifacts' do
   inherit 'org.jruby:jruby-parent', version
   packaging 'pom'
 
-  properties( 'tesla.dump.pom' => 'pom.xml',
-              'tesla.dump.readonly' => true )
+  properties( 'tesla.not.dump.pom' => 'pom.xml',
+              'tesla.not.dump.readonly' => true )
 
   plugin_management do
     plugin 'org.codehaus.mojo:build-helper-maven-plugin' do
