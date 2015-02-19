@@ -53,7 +53,7 @@ project 'JRuby', 'https://github.com/jruby/jruby' do
 
   properties( 'its.j2ee' => 'j2ee*/pom.xml',
               'its.osgi' => 'osgi*/pom.xml',
-              'tesla.version' => '0.1.1',
+              'tesla.version' => '0.1.2-SNAPSHOT',
               'rspec-core.version' => '2.14.2',
               'jruby.basedir' => '${project.basedir}',
               'minitest.version' => '5.4.1',
@@ -91,6 +91,7 @@ project 'JRuby', 'https://github.com/jruby/jruby' do
   modules [ 'truffle', 'core', 'lib' ]
 
   plugin_management do
+    plugin 'io.tesla.polyglot:tesla-polyglot-maven-plugin:0.1.2-SNAPSHOT'  
     jar( 'junit:junit:4.11',
          :scope => 'test' )
 
