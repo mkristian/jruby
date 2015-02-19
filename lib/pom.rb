@@ -59,7 +59,7 @@ project 'JRuby Lib Setup' do
 
   properties( 'tesla.not.dump.pom' => 'pom.xml',
               'tesla.not.dump.readonly' => true,
-              'tesla.version' => '0.1.1',
+              'tesla.version' => '0.1.2-SNAPSHOT',
               'jruby.plugins.version' => '1.0.5' )
 
   unless version =~ /-SNAPSHOT/
